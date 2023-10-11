@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root{
+/*Primary*/
+--Bright_orange: hsl(31, 77%, 52%);
+--Dark_cyan: hsl(184, 100%, 22%);
+--Very_dark_cyan: hsl(179, 100%, 13%);
+/*Neutral*/
+--Transparent_white:hsla(0, 0%, 100%, 0.75);/*Paragraphs*/
+--Very_light_gray: hsl(0, 0%, 95%)/*background, headings, buttons*/
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lexend Deca",sans-serif;
+    background: var(--Very_light_gray);
+    font-size: 15px;
+    font-weight: 400;
+    background-color:var(--Bright_orange);
+
+}
+h1{
+    margin-top:60px;
+    text-align: center;
+    margin-bottom:30px;
+    color:var(--Very_light_gray);
+}
+.max-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.container{
+    padding:20px;
+    border-radius: 10px;
+    background-color:var(--Dark_cyan);
+    max-width: 50%;
+    color:white;
+}
+.resultados{
+    background-color: var(--Very_dark_cyan);
+    max-width: 50%;
+    border-radius: 10px;
+    color:white;
+    padding:20px;
+ 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: space-around;
+
+}
+.pregunta-peso, .pregunta-actividadfisica,.pregunta-objetivo, button{
+    line-height: 1.7;
+}
+
+button{
+    border-radius: 10px;
+    background-color: gray;
+    line-height: 1.6;
+    padding:10px;
+    margin:20px;
+    font-weight: 900;
+}
+button:hover{
+    background-color:cyan;
+}
+@media screen and (max-width:815px){
+    .max-container{
+        flex-direction: column;
+    }
+    .pregunta-peso,.pregunta-actividadfisica,.pregunta-objetivo{
+        display: flex;
+        flex-direction: column;
+    }
+    .container,.resultados{
+       align-self: center;
+    }
+
+}

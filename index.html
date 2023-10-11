@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CALCULADORA DE GRAMOS A CONSUMIR FITNESS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Calcular los gramos que necesitas ingerir</h1>
+  <div class="max-container">
+    <div class="container">
+        <div class="pregunta-peso">
+            <label for="weight">Ingresa tu peso en Kg</label>
+            <input id="weight"type="number">
+        </div>
+    
+        <div class="pregunta-actividadfisica">
+            <label for="">Selecciona tu frecuencia de actividad física</label>
+            <select name="actividad-fisica" id="actividad-fisica">
+            <option value="Poco o ningun ejercicio">Poco o ningun ejercicio</option>
+            <option value="Ejercicio ligero">Ejercicio ligero (1-3 d/semamana)</option>
+            <option value="Ejercicio moderado">Ejercicio moderado (3-5 d/semana)</option>
+            <option value="Ejercicio fuerte">Ejercicio fuerte (6-7 d/semana)</option>
+            <option value="Ejercicio muy fuerte">Ejercicio muy fuerte (2 sesiones ejercicios/d)</option>
+        </select>
+        </div>
+    
+        
+        <div class="pregunta-objetivo">
+            <label for="">Selecciona tu objetivo</label>
+            <select name="miobjetivo" id="miobjetivo">
+            <option value="Subir Peso leve">Subir Peso leve</option>
+            <option value="Subir peso moderado">Subir peso moderado</option>
+            <option value="Subir peso fuerte">Subir peso fuerte</option>
+            <option value="Bajar peso leve">Bajar peso leve</option>
+            <option value="Bajar peso moderado">Bajar peso moderado</option>
+            <option value="Bajar peso fuerte">Bajar peso fuerte</option>
+        </select>
+        </div>
+        
+    
+      <button id="calcular">Calcular los gramos de alimento que necesitas consumir</button>
+      </div>
+      
+      <div class="resultados">
+        <p id="result0"></p>
+        <p id="result"></p>
+      </div>
+  </div>
+  
+
+  <script src="./script.js"></script>
+</body>
+</html>
